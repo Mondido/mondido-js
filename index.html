@@ -108,7 +108,7 @@
     var payment_ref = Math.floor((Math.random() * 10000) + 1); //random payment reference
     var secret = "$2a$10$k/wS5qecZLyMmqo0e8GV9."; // ssshhh, this is the secret, should be stored in backend
     var merchant_id = "3";
-    var hash = md5(merchant_id+payment_ref+"1.00"+secret); // the hash should me calculated on backend
+    var hash = md5(merchant_id+payment_ref+"1.00"+secret); // the hash should be calculated on backend
 
     $('input[name="payment_ref"]').val(payment_ref);
     $('input[name="hash"]').val(hash);
